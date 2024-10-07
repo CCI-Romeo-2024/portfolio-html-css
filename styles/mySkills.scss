@@ -1,0 +1,71 @@
+main {
+    .my-skills {
+        margin-top: 100px;
+        margin-bottom: 40px;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        width: 90vw;
+        max-width: 600px;
+
+        align-items: center;
+
+        .langages {
+            margin-top: 40px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            overflow: hidden;
+
+            grid-gap: 5vw;
+
+            div {
+                width: 42.5vw;
+                height: 42.5vw;
+
+                border: 2px solid var(--text-primary);
+                border-radius: 6px;
+
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+                align-items: center;
+
+                transition: 0.1s ease;
+
+                cursor: pointer;
+
+                img {
+                    width: 40%;
+
+                    margin-bottom: 30px;
+                }
+
+                h2 {
+                    font-size: 1.4em;
+
+                    font-weight: bold;
+
+                    text-align: center;
+                }
+
+                &.invert {
+                    backdrop-filter: invert(1);
+
+                    h2 {
+                        filter: invert(1);
+                    }
+
+                    img {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 :root {
     font-family: "Sora", system-ui;
@@ -14,17 +14,17 @@
     --text-primary: #000;
     --text-secondary: #fff;
 
+    --zinc-800:  #27272A;
     --zinc-500: #71717A;
     --zinc-300: #D4D4D8;
 
     --bg-primary: #fff;
     --bg-secondary: #000;
-
-
 }
 
 body {
     margin: 0;
     padding: 0;
-}
 
+    background: var(--bg-primary);
+}

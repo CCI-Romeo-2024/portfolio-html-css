@@ -1,0 +1,22 @@
+.title {
+    font-size: 1.85em;
+    line-height: 1.65;
+
+    span {
+        font-weight: 900;
+
+        color: var(--text-secondary);
+
+        -webkit-text-fill-color: var(--text-secondary);
+        -webkit-text-stroke: 3pt var(--text-primary);
+        paint-order: stroke fill;
+
+        margin-left: 8px;
+    }
+
+    strong {
+        font-weight: 900;
+
+        margin-left: 8px;
+    }
+}
