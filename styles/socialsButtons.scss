@@ -1,0 +1,36 @@
+.socials {
+
+    margin-top: 30px;
+    margin-bottom: 230px;
+
+    display: flex;
+
+    height: 48px;
+    a {
+        padding: 12px;
+
+        height: 48px;
+        width: 48px;
+
+        border: 2px var(--bg-secondary) solid;
+        border-radius: 4px;
+
+        margin-right: 16px;
+
+        img {
+            justify-self: center;
+            width: 20px;
+        }
+
+        transition: 0.1s ease;
+
+        &.invert {
+            backdrop-filter: invert(1);
+
+            img {
+                filter: invert(1);
+            }
+        }
+
+    }
+}

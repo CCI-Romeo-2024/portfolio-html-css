@@ -1,0 +1,115 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo {
+        margin: 18px 24px;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+
+    }
+
+    .nav-burger {
+        margin: 20px 26px;
+    }
+
+    #nav-bar {
+        transition: max-height ease-in-out 0.3s;
+        width: 100vw;
+        max-height: 0;
+
+        overflow: hidden;
+
+
+        ul {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            li {
+
+                display: flex;
+                flex-direction: column;
+                a {
+                    width: 100%;
+
+                    padding: 5px 20px;
+
+                    font-size: 1.2em;
+                    text-align: center;
+
+                    &:hover {
+                        background: var(--bg-secondary);
+                        color: var(--text-secondary);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            max-height: 200px;
+        }
+    }
+}
+
+.nav-burger {
+    .menu {
+        cursor: pointer;
+
+        .bar {
+            height: 3px;
+            width: 30px;
+            display: block;
+            margin: 5px 0;
+            background-color: var(--text-primary);
+            border-radius: 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+
+            &:nth-of-type(1) {
+                transform: translateY(0) rotate(0);
+            }
+
+            &:nth-of-type(2) {
+                opacity: 1;
+            }
+
+            &:nth-of-type(3) {
+                transform: translateY(0) rotate(0);
+            }
+        }
+
+        &.active {
+            .bar {
+                &:nth-of-type(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:nth-of-type(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    header {
+        background: red;
+    }
+}

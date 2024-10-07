@@ -1,0 +1,30 @@
+// @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    font-family: "Sora", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --text-primary: #000;
+    --text-secondary: #fff;
+
+    --zinc-500: #71717A;
+    --zinc-300: #D4D4D8;
+
+    --bg-primary: #fff;
+    --bg-secondary: #000;
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
