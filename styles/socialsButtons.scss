@@ -4,33 +4,37 @@
     display: flex;
 
     height: 48px;
-    a {
-        padding: 12px;
+    li {
+        a {
+            display: block;
 
-        height: 48px;
-        width: 48px;
+            padding: 12px;
 
-        border: 2px var(--bg-secondary) solid;
-        border-radius: 4px;
+            height: 48px;
+            width: 48px;
 
-        margin-right: 16px;
+            border: 2px var(--bg-secondary) solid;
+            border-radius: 4px;
 
-        cursor: pointer;
+            margin-right: 16px;
 
-        img {
-            justify-self: center;
-            width: 20px;
-        }
-
-        transition: 0.1s ease;
-
-        &.invert {
-            backdrop-filter: invert(1);
+            cursor: pointer;
 
             img {
-                filter: invert(1);
+                justify-self: center;
+                width: 20px;
             }
-        }
 
+            transition: 0.1s ease;
+
+            &.invert {
+                backdrop-filter: invert(1);
+
+                img {
+                    filter: invert(1);
+                }
+            }
+
+        }
     }
 }

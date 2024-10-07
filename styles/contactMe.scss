@@ -1,0 +1,99 @@
+main {
+    .contact-me {
+        margin-top: 80px;
+
+        h1 {
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .display {
+            display: flex;
+            flex-direction: column;
+
+            .form {
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    margin-top: 20px;
+
+                    width: 90vw;
+                    max-width: 600px;
+
+                    input {
+                        color: var(--zinc-500);
+                        border: 1.4pt solid var(--text-primary);
+                        border-radius: 6px;
+
+                        padding: 0 20px;
+
+                        height: 55px;
+
+                        margin-bottom: 5vw;
+                    }
+
+                    #contact-submit {
+                        cursor: pointer;
+
+                        background: var(--bg-secondary);
+                        color: var(--text-secondary);
+
+                        font-weight: 600;
+
+                        width: fit-content;
+                    }
+
+                    textarea {
+                        color: var(--zinc-500);
+                        border: 1.4pt solid var(--text-primary);
+                        border-radius: 6px;
+
+                        padding: 15px 20px;
+
+                        min-height: 100px;
+                        height: fit-content;
+
+                        margin-bottom: 5vw;
+                    }
+                }
+
+                .socials {
+                    margin-top: 20px;
+                }
+            }
+
+            .texts {
+                width: 90vw;
+                .title {
+                    margin-top: 50px;
+
+                    strong {
+                        margin-left: 0;
+                        span {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 30px;
+
+                    color: var(--zinc-500);
+                }
+
+                .contact {
+                    margin-top: 40px;
+
+                    font-weight: 600;
+                    font-size: 1.6em;
+
+                    a {
+
+                    }
+                }
+            }
+        }
+    }
+}

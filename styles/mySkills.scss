@@ -8,11 +8,11 @@ main {
         flex-direction: column;
 
         width: 90vw;
-        max-width: 600px;
+        //max-width: 600px;
 
         align-items: center;
 
-        .langages {
+        .languages {
             margin-top: 40px;
 
             display: grid;
@@ -21,11 +21,14 @@ main {
 
             overflow: hidden;
 
-            grid-gap: 5vw;
+            grid-gap: 30px;
 
-            div {
+            a {
                 width: 42.5vw;
                 height: 42.5vw;
+                max-width: 200px;
+                max-height: 200px;
+
 
                 border: 2px solid var(--text-primary);
                 border-radius: 6px;
@@ -65,6 +68,37 @@ main {
                         filter: invert(1);
                     }
                 }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        .my-skills {
+            .languages {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        .my-skills {
+            margin-top: 70px;
+            margin-bottom: 140px;
+
+            .languages {
+                //width: 80vw;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                column-gap: 60px;
+                row-gap: 40px;
             }
         }
     }

@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
+
+    margin-top: 60px;
+
+    padding: 0 20px;
+
+    height: 80px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+
+        img {
+            margin-right: 20px;
+            filter: invert(1);
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 1.4em;
+
+            margin: 0;
+        }
+
+    }
+
+    .credit {
+        text-align: end;
+
+        font-weight: 600;
+        font-size: .8em;
+    }
+}

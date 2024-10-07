@@ -4,9 +4,11 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    //min-height: 100px;
+
+    padding: 18px 24px;
 
     .logo {
-        margin: 18px 24px;
         display: flex;
         align-items: center;
 
@@ -19,10 +21,6 @@ header {
             font-size: 1.4em;
         }
 
-    }
-
-    .nav-burger {
-        margin: 20px 26px;
     }
 
     #nav-bar {
@@ -60,6 +58,10 @@ header {
         &.active {
             max-height: 200px;
         }
+    }
+
+    .download-portfolio {
+        display: none;
     }
 }
 
@@ -110,6 +112,59 @@ header {
 
 @media screen and (min-width: 1024px) {
     header {
-        background: red;
+        min-height: 90px;
+
+        .nav-burger {
+            display: none;
+        }
+
+        #nav-bar {
+            width: fit-content;
+            max-height: fit-content;
+
+            ul {
+                margin-top: 0;
+                margin-bottom: 0;
+
+                li {
+
+                    flex-direction: row;
+
+                    a {
+                        width: fit-content;
+
+                        padding: 5px 20px;
+
+                        transition: font-weight ease-in-out 200ms;
+
+                        &:hover {
+                            background: var(--bg-primary);
+                            color: var(--text-primary);
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        .download-portfolio {
+            display: block;
+
+
+            a {
+                display: flex;
+                align-items: center;
+
+                background: var(--bg-secondary);
+                color: var(--text-secondary);
+
+                padding: 15px 25px;
+                border-radius: 6px;
+
+                svg {
+                    margin-left: 10px;
+                }
+            }
+        }
     }
 }

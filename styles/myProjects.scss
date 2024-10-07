@@ -1,36 +1,58 @@
 main {
     .my-projects {
         background: var(--bg-secondary);
+        color: var(--text-secondary);
         width: 100vw;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 50px;
+
         .projects {
-            margin-bottom: 100px;
+            margin-top: 30px;
+
             .project {
-                color: #fff;
+                margin-bottom: 40px;
 
-                img {
+                &:last-child {
+                    margin-bottom: 60px;
+                }
 
+                .preview-img {
+                    width: 90vw;
+                    border-radius: 15px;
                 }
 
                 .desc {
-
+                    width: 90vw;
                     .number {
+                        font-size: 1.6em;
+                        font-weight: 700;
 
+                        margin-top: 15px;
                     }
 
                     .name {
+                        font-size: 1.2em;
+                        font-weight: 600;
 
+                        margin-top: 24px;
                     }
 
                     .explication {
-
+                        margin-top: 30px;
                     }
 
                     a {
-
+                        display: block;
+                        width: fit-content;
+                        margin-top: 20px;
 
                         img {
-
+                            margin: 5px 5px 5px 0;
+                            width: 20px;
                         }
                     }
                 }

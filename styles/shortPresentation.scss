@@ -8,7 +8,7 @@ main {
     .short-presentation {
         display: flex;
         margin-top: 56px;
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
 
         flex-direction: column;
         width: 90vw;
@@ -39,5 +39,42 @@ main {
 
         }
     }
+}
 
+@media screen and (min-width: 1024px) {
+    main {
+
+        .short-presentation {
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            max-width: 80vw;
+
+            img {
+                margin-bottom: 24px;
+                max-width: 600px;
+                height: 500px;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 0.5em;
+                    border-top: 1px solid black;
+                    z-index: -1;
+                }
+            }
+
+            .presentation {
+                p {
+                    width: 45vw;
+
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
 }
