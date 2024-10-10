@@ -75,3 +75,16 @@ main {
         }
     }
 }
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        .my-experience {
+            .experience {
+                .exp {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

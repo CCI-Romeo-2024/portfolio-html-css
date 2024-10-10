@@ -15,57 +15,67 @@ main {
         .languages {
             margin-top: 40px;
 
+            // width: 90vw;
+
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, min(200px, 42.5vw));
 
             overflow: hidden;
 
-            grid-gap: 30px;
+            column-gap: calc(max(calc((90vw - (200px*5)) / 2), 5vw));
+            // justify-content: space-between;
 
-            a {
+            row-gap: min(30px, 5vw);
+
+
+
+            li {
                 width: 42.5vw;
                 height: 42.5vw;
                 max-width: 200px;
                 max-height: 200px;
 
+                a {
+                    height: 100%;
+                    width: 100%;
 
-                border: 2px solid var(--text-primary);
-                border-radius: 6px;
+                    border: 2px solid var(--text-primary);
+                    border-radius: 6px;
 
-                display: flex;
-                flex-direction: column;
+                    display: flex;
+                    flex-direction: column;
 
-                justify-content: center;
-                align-items: center;
+                    justify-content: center;
+                    align-items: center;
 
-                transition: 0.1s ease;
+                    transition: 0.1s ease;
 
-                cursor: pointer;
-
-                img {
-                    width: 40%;
-
-                    margin-bottom: 30px;
-                }
-
-                h2 {
-                    font-size: 1.4em;
-
-                    font-weight: bold;
-
-                    text-align: center;
-                }
-
-                &.invert {
-                    backdrop-filter: invert(1);
-
-                    h2 {
-                        filter: invert(1);
-                    }
+                    cursor: pointer;
 
                     img {
-                        filter: invert(1);
+                        width: 40%;
+
+                        margin-bottom: 30px;
+                    }
+
+                    h2 {
+                        font-size: 1.4em;
+
+                        font-weight: bold;
+
+                        text-align: center;
+                    }
+
+                    &:hover, &:focus {
+                        backdrop-filter: invert(1);
+
+                        h2 {
+                            filter: invert(1);
+                        }
+
+                        img {
+                            filter: invert(1);
+                        }
                     }
                 }
             }
@@ -73,32 +83,65 @@ main {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 979px){
+    main {
+        .my-skills {
+            .languages {
+                grid-template-columns: repeat(3, 200px);
+
+                column-gap: calc(max(calc((90vw - (200px*5)) / 3), 3vw));
+
+                li:nth-child(n+10) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 768px) {
     main {
         .my-skills {
             .languages {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-
+                margin-top: 70px;
+                margin-bottom: 140px;
             }
         }
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 980px) and (max-width: 1247px) {
     main {
         .my-skills {
-            margin-top: 70px;
-            margin-bottom: 140px;
-
             .languages {
-                //width: 80vw;
-                grid-template-columns: repeat(5, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 200px);
+                column-gap: calc(max(calc((90vw - (200px*5)) / 4), 3vw));
 
-                column-gap: 60px;
-                row-gap: 40px;
+                li:nth-child(n+9) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1248px) {
+    main {
+        .my-skills {
+            .languages {
+                grid-template-columns: repeat(5, 200px);
+
+                a {
+                    border-radius: 5px;
+                    //max-width: 210px;
+                    //max-height: 210px;
+
+                }
+
+                column-gap: calc(min(max(calc((90vw - (200px*5)) / 5), 3vw), 70px));
+
+                //grid-gap: max(calc((80vw - (210px*5)) / 4));
+                //row-gap: min(70px, calc((90vw - (100px*5)) / 4)) ;
             }
         }
     }

@@ -27,7 +27,7 @@
 
             transition: 0.1s ease;
 
-            &.invert {
+            &:hover, &:focus {
                 backdrop-filter: invert(1);
 
                 img {

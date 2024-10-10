@@ -8,26 +8,56 @@ main {
 
         margin-top: 60px;
         margin-bottom: 50px;
-
         img {
             width: 100%;
             max-width: 400px;
         }
+        div {
 
-        .title {
-            margin-top: 40px;
-            align-self: start;
+
+
+            .title {
+                margin-top: 40px;
+                align-self: start;
+            }
+
+            p {
+                margin-top: 30px;
+                color: var(--zinc-500);
+
+                span {
+                    display: block;
+                    content: " ";
+                    line-height: 36px;
+                    margin: 18px 0;
+                }
+            }
         }
+    }
+}
 
-        p {
-            margin-top: 30px;
-            color: var(--zinc-500);
+@media screen and (min-width: 1248px) {
+    main {
+        .about-me {
+            flex-direction: row;
+            align-items: flex-start;
+            img {
+                width: 30vw;
+                max-width: 500px
+            }
+            div {
+                width: 60vw;
 
-            span {
-                display: block;
-                content: " ";
-                line-height: 36px;
-                margin: 18px 0;
+                .title {
+                    margin-top: 0;
+                }
+                p {
+                    font-size: 1.1em;
+                    span {
+                        line-height: 40px;
+                    }
+                }
+                margin-left: 60px;
             }
         }
     }
