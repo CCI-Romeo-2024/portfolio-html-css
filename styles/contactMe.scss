@@ -22,6 +22,8 @@ main {
                     width: 90vw;
                     max-width: 600px;
 
+                    gap: 5vw;
+
                     input {
                         color: var(--zinc-500);
                         border: 1.4pt solid var(--text-primary);
@@ -30,8 +32,6 @@ main {
                         padding: 0 20px;
 
                         height: 55px;
-
-                        margin-bottom: 5vw;
                     }
 
                     #contact-submit {
@@ -54,13 +54,11 @@ main {
 
                         min-height: 100px;
                         height: fit-content;
-
-                        margin-bottom: 5vw;
                     }
                 }
 
                 .socials {
-                    margin-top: 20px;
+                    margin-top: 6vw;
                 }
             }
 
@@ -93,8 +91,15 @@ main {
                     font-weight: 600;
                     font-size: 1.6em;
 
-                    a {
+                    gap: 10px;
 
+                    a {
+                        width: fit-content;
+
+                        &:hover {
+                            text-decoration: underline;
+
+                        }
                     }
                 }
             }
@@ -133,13 +138,13 @@ main {
                 flex-direction: row;
                 .form {
                     #contact-form {
-
+                        gap: 35px;
                         input {
-                            margin-bottom: 35px;
+                            //margin-bottom: 35px;
                         }
 
                         textarea {
-                            margin-bottom: 35px;
+                            //margin-bottom: 35px;
                         }
 
                         fieldset {

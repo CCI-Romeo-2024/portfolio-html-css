@@ -4,8 +4,6 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    //min-height: 100px;
-
     padding: 18px 24px;
 
     .logo {
@@ -38,10 +36,12 @@ header {
 
                 display: flex;
                 flex-direction: column;
+                gap: 30px;
+
                 a {
                     width: 100%;
 
-                    padding: 5px 20px;
+                    padding: 5px 0;
 
                     font-size: 1.2em;
                     text-align: center;
@@ -127,13 +127,12 @@ header {
                 margin-bottom: 0;
 
                 li {
-
                     flex-direction: row;
 
                     a {
                         width: fit-content;
 
-                        padding: 5px 20px;
+                        //padding: 5px 20px;
 
                         transition: font-weight ease-in-out 200ms;
 
